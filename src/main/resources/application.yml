@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: provision-service
+    
+  datasource:
+    url: jdbc:postgresql://10.53.200.214:1521/dmsdb
+    username: dms_sp
+    password: xairv
+    
+  jpa.show-sql: true
+  
+logging:
+  level:
+    root: INFO
+    
+springdoc:
+  api-docs:
+    path: /provision
+
+  swagger-ui:
+    path: /swagger-ui-provision.html
+    operationsSorter: method
